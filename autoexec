@@ -31,7 +31,7 @@
 1950 SET FNKEY 12 TO \"RUN\"esp:settings\"\n"
 
 2000 REM ===============================================
-2210 REM invoke NEW to clear program space now that 
-2220 REM environment initialization is complete.
-2230 REM ===============================================
+2010 REM invoke NEW to clear program space now that 
+2020 REM environment initialization is complete.
+2030 REM ===============================================
 2040 NEW
