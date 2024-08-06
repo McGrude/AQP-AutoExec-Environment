@@ -1,0 +1,37 @@
+1000 REM ===============================================
+1010 REM AutoExec -- Setup environment
+1020 REM ===============================================
+
+1100 REM ===============================================
+1110 REM TODO
+1120 REM ===============================================
+1130 REM set screen mode to 80 columns
+1140 REM set key repeat
+
+1200 REM ===============================================
+1210 REM Define Greyscale Palette
+1220 REM ===============================================
+1230 DEF RGBLIST N1$=0,0,0;1,1,1;2,2,2;3,3,3
+1240 DEF RGBLIST N2$=4,4,4;5,5,5;6,6,6;7,7,7
+1250 DEF RGBLIST N3$=8,8,8;9,9,9;10,10,10;11,11,11
+1260 DEF RGBLIST N4$=12,12,12;13,13,13;14,14,14;15,15,15
+1270 NP$ = N1$+N2$+N3$+N4$
+1280 SET PALETTE 0 TO NP$
+
+1300 ===============================================
+1310 Set Console Font - Change to preferred charset
+1320 ===============================================
+1330 USE CHRSET "/env/charmaps/bold.chr"
+
+1900 REM ===============================================
+1910 REM set F-Keys to invoke common programs
+1920 REM ===============================================
+1930 SET FNKEY 10 TO \"RUN\"/aqds/aqds.aqx\"\n"
+1940 SET FNKEY 11 TO \"CD\"/cpm\":RUN\"gocpm.aqx\"\n"
+1950 SET FNKEY 12 TO \"RUN\"esp:settings\"\n"
+
+2000 REM ===============================================
+2210 REM invoke NEW to clear program space now that 
+2220 REM environment initialization is complete.
+2230 REM ===============================================
+2040 NEW
