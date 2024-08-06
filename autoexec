@@ -1,10 +1,10 @@
 1000 REM AutoExec -- Setup environment
 
 1100 REM TODO
-1110 REM Save default screen 1,2,3 palettes.
+1110 REM Save default screen palettes.
 1120 REM Create a number of example palettes.
 1130 REM Load a palette from a file rather
-1140 REM than define it inline.
+1140 REM than defining it inline.
 
 1200 REM Define Greyscale Palette
 1210 DEF RGBLIST N1$=0,0,0;1,1,1;2,2,2;3,3,3
@@ -18,20 +18,17 @@
 1310 USE CHRSET "/env/charmaps/bold.chr"
 
 1400 REM Set Key Repeat Parameters
-1410 SET KEY 3
+1410 SET KEY 7
 
-1500 REM Set 80 column mode. 
-1510 SCREEN 3
+1500 REM Set to save basic programs as ascii .BAS files
+1510 REM by default. Change ON to OFF, or comment out to
+1520 REM save as tokenized basic .BAQ files instead.
+1530 SET SAVE ASC ON 
 
-1600 REM Set to save basic programs as ascii .BAS files
-1610 REM by default. Change ON to OFF, or comment out to
-1620 REM save as tokenized basic .BAQ files instead.
-1630 SET SAVE ASC ON 
-
-1900 REM set F-Keys to invoke common programs
-1910 SET FNKEY 10 TO \"RUN\"/aqds/aqds.aqx\"\n"
-1920 SET FNKEY 11 TO \"CD\"/cpm\":RUN\"gocpm.aqx\"\n"
-1930 SET FNKEY 12 TO \"RUN\"esp:settings\"\n"
+1600 REM set F-Keys to invoke common programs
+1610 SET FNKEY 10 TO \"RUN\"/aqds/aqds.aqx\"\n"
+1620 SET FNKEY 11 TO \"CD\"/cpm\":RUN\"gocpm.aqx\"\n"
+1630 SET FNKEY 12 TO \"RUN\"esp:settings\"\n"
 
 2000 REM invoke NEW to clear program space now that 
 2010 REM environment initialization is complete.
