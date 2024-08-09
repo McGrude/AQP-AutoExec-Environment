@@ -1,35 +1,36 @@
-1000 REM AutoExec -- Setup environment
-
-1100 REM TODO
-1110 REM Save default screen palettes.
-1120 REM Create a number of example palettes.
-1130 REM Load a palette from a file rather
-1140 REM than defining it inline.
-
-1200 REM Define Greyscale Palette
-1210 DEF RGBLIST N1$=0,0,0;1,1,1;2,2,2;3,3,3
-1220 DEF RGBLIST N2$=4,4,4;5,5,5;6,6,6;7,7,7
-1230 DEF RGBLIST N3$=8,8,8;9,9,9;10,10,10;11,11,11
-1240 DEF RGBLIST N4$=12,12,12;13,13,13;14,14,14;15,15,15
-1250 NP$ = N1$+N2$+N3$+N4$
-1260 SET PALETTE 0 TO NP$
-
-1300 REM Set Console Font - Change to preferred charset
-1310 USE CHRSET "/env/charmaps/bold.chr"
-
-1400 REM Set Key Repeat Parameters
-1410 SET KEY 7
-
-1500 REM Set to save basic programs as ascii .BAS files
-1510 REM by default. Change ON to OFF, or comment out to
-1520 REM save as tokenized basic .BAQ files instead.
-1530 SET SAVE ASC ON 
-
-1600 REM set F-Keys to invoke common programs
-1610 SET FNKEY 10 TO \"RUN\"/aqds/aqds.aqx\"\n"
-1620 SET FNKEY 11 TO \"CD\"/cpm\":RUN\"gocpm.aqx\"\n"
-1630 SET FNKEY 12 TO \"RUN\"esp:settings\"\n"
-
-2000 REM invoke NEW to clear program space now that 
-2010 REM environment initialization is complete.
-2020 NEW
+1000 ' END : ' Uncomment to Disable
+1010 ' AutoExec -- Setup environment
+1020 ' TODO
+1030 ' Save default screen 1,2,3 palettes.
+1040 ' Create a number of example palettes.
+1050 ' Load a palette from a file rather
+1060 ' than define it inline.
+1070 ' Define Greyscale Palette
+1080 DEF RGBLIST N1$=0,0,0  ; 15,15,15; 12,12,12 : ' BLK WHT LT GRY
+1090 DEF RGBLIST N2$=15,0,0 ; 0,15,0  ; 0,0,15   : ' RED GRN BLU
+1100 DEF RGBLIST N3$=0,15,15; 15,0,15 ; 15,15,0  : ' CYN MAG YLW
+1110 DEF RGBLIST N4$=7,0,0  ; 0,7,0   ; 0,0,7    : ' DK RED DK GRN DK BLU
+1120 DEF RGBLIST N5$=0,7,7  ; 7,0,7   ; 7,7,0    : ' DK CYN DK MAG DK YLW
+1130 DEF RGBLIST N6$=4,4,4                       : ' DK GRY
+1140 NP$ = N1$+N2$+N3$+N4$
+1150 ' Sets palette for screen 0
+1160 SET PALETTE 0 TO NP$
+1170 ' Set 80 column mode. 
+1180 SCREEN 3
+1190 ' Sets pallets for screen 3      
+1200 SET PALETTE 0 TO NP$
+1210 ' Set Console Font - Change to preferred charset
+1220 USE CHRSET "/env/charmaps/bold.chr"
+1230 ' Set Key Repeat Parameters
+1240 SET KEY 3
+1250 ' Set to save basic programs as ascii .BAS files
+1260 ' by default. Change ON to OFF, or comment out to
+1270 ' save as tokenized basic .BAQ files instead.
+1280 SET SAVE ASC ON 
+1290 ' set F-Keys to invoke common programs
+1300 SET FNKEY 10 TO \"RUN\"/aqds/aqds.aqx\"\n\"
+1310 SET FNKEY 11 TO \"CD\"/cpm\":RUN\"gocpm.aqx\"\n\"
+1320 SET FNKEY 12 TO \"RUN\"esp:settings\"\n\"
+1330 ' invoke NEW to clear program space now that 
+1340 ' environment initialization is complete.
+1350 ' NEW
