@@ -1,15 +1,13 @@
 1000 ' END : ' Uncomment to Disable
-1010 SCREEN 3     
-1020 CLS
-1030 DEF RGBLIST N1$=15,0,0;1,1,1;2,2,2;3,3,3
-1040 DEF RGBLIST N2$=4,4,4;5,5,5;6,6,6;7,7,7
-1050 DEF RGBLIST N3$=8,8,8;9,9,9;10,10,10;11,11,11
-1060 DEF RGBLIST N4$=12,12,12;13,13,13;14,14,14;15,15,15
-1070 NP$ = N1$+N2$+N3$+N4$
-1080 SET PALETTE 0 TO NP$
-1090 USE CHRSET "/env/charmaps/bold.chr"
-1100 SET SAVE ASC ON 
-1110 SET FNKEY 10 TO \"RUN\"/aqds/aqds.aqx\"\n\"
-1120 SET FNKEY 11 TO \"CD\"/cpm\":RUN\"gocpm.aqx\"\n\"
-1130 SET FNKEY 12 TO \"RUN\"esp:settings\"\n\"
-1140 ' NEW
+1010 SCREEN 3 : ' Switch to 80 Column Screen
+1020 DEF RGBLIST FG$ = 15,15,15 : ' WHITE
+1030 DEF RGBLIST BG$ = 0,0,0    : ' BLACK
+1040 SET PALETTE 0 INDEX 0 TO FG$
+1050 SET PALETTE 0 INDEX 6 to BG$
+1060 CLS 
+1070 USE CHRSET "/env/charmaps/bold.chr"
+1080 SET SAVE ASC ON 
+1090 SET FNKEY 10 TO \"RUN\"/aqds/aqds.aqx\"\n\"
+1100 SET FNKEY 11 TO \"CD\"/cpm\":RUN\"gocpm.aqx\"\n\"
+1110 SET FNKEY 12 TO \"RUN\"esp:settings\"\n\"
+1120 ' NEW : ' Uncomment to clear after execution
