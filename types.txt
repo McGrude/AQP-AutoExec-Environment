@@ -1,8 +1,7 @@
-TYPE: Assignment Statement                  FORMAT: READ <variable>[,<variable>]...
 TYPE: Command                               FORMAT: LIST [[<first-line>]-[<last-line>]]
 TYPE: Command                               FORMAT: NEW
 TYPE: Command                               FORMAT: RUN [<line-number>]
-TYPE: Extended BASIC Trigonometric Function FORMAT: ATN(<number>)
+TYPE: Floating-Point Function               FORMAT: ATN(<number>)
 TYPE: Floating-Point Function               FORMAT: LOG(<numeric>)
 TYPE: Floating-Point Function               FORMAT: RND (<numeric>)
 TYPE: Floating-Point Function               FORMAT: SIN (<numeric>)
@@ -25,6 +24,7 @@ TYPE: I/O Statement                         FORMAT: COPY
 TYPE: I/O Statement                         FORMAT: INPUT ["<prompt>";] <variable list>
 TYPE: I/O Statement                         FORMAT: LPRINT [<variable>][<,/;><variable>]...
 TYPE: I/O Statement                         FORMAT: PRINT [<variable>][<,/;><variable>]...
+TYPE: I/O Statement                         FORMAT: READ <variable>[,<variable>]...
 TYPE: Integer Function                      FORMAT: INT(<numeric>)
 TYPE: Integer Function                      FORMAT: LEN (<string>)
 TYPE: Integer Function                      FORMAT: SGN (<numeric>)
