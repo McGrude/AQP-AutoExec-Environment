@@ -1,0 +1,55 @@
+TYPE: Assignment Statement                  FORMAT: READ <variable>[,<variable>]...
+TYPE: Command                               FORMAT: LIST [[<first-line>]-[<last-line>]]
+TYPE: Command                               FORMAT: NEW
+TYPE: Command                               FORMAT: RUN [<line-number>]
+TYPE: Extended BASIC Trigonometric Function FORMAT: ATN(<number>)
+TYPE: Floating-Point Function               FORMAT: LOG(<numeric>)
+TYPE: Floating-Point Function               FORMAT: RND (<numeric>)
+TYPE: Floating-Point Function               FORMAT: SIN (<numeric>)
+TYPE: Floating-Point Function               FORMAT: SQR (<numeric>)
+TYPE: Floating-Point Function               FORMAT: TAN (<numeric>)
+TYPE: Floating-Point Function               FORMAT: USR (<numeric>)
+TYPE: Flow Control Command                  FORMAT: CONT
+TYPE: Flow Control Statement                FORMAT: END
+TYPE: Flow Control Statement                FORMAT: FOR <variable> = <start> TO <limit> [ STEP <increment> ]
+TYPE: Flow Control Statement                FORMAT: GOSUB <line number>
+TYPE: Flow Control Statement                FORMAT: GOTO <line number>
+TYPE: Flow Control Statement                FORMAT: IF <numeric> THEN <line number>
+TYPE: Flow Control Statement                FORMAT: NEXT[<counter>][,<counter>]...
+TYPE: Flow Control Statement                FORMAT: ON <variable> GOTO / GOSUB <line-number>[,<line-number>]...
+TYPE: Flow Control Statement                FORMAT: RETURN
+TYPE: Flow Control Statement                FORMAT: STOP
+TYPE: Flow Control Statement                FORMAT: [STEP <expression>]
+TYPE: Function                              FORMAT: FRE(<numeric>)
+TYPE: I/O Statement                         FORMAT: COPY
+TYPE: I/O Statement                         FORMAT: INPUT ["<prompt>";] <variable list>
+TYPE: I/O Statement                         FORMAT: LPRINT [<variable>][<,/;><variable>]...
+TYPE: I/O Statement                         FORMAT: PRINT [<variable>][<,/;><variable>]...
+TYPE: Integer Function                      FORMAT: INT(<numeric>)
+TYPE: Integer Function                      FORMAT: LEN (<string>)
+TYPE: Integer Function                      FORMAT: SGN (<numeric>)
+TYPE: Logical Operator                      FORMAT: <numeric> AND <numeric>
+TYPE: Logical Operator                      FORMAT: <operand> OR <operand>
+TYPE: Logical Operator                      FORMAT: NOT <numeric>
+TYPE: Numeric Function                      FORMAT: ABS(<numeric>)
+TYPE: Numeric Function                      FORMAT: ASC(<string>)
+TYPE: Numeric Function                      FORMAT: COS(<number>)
+TYPE: Numeric Function                      FORMAT: EXP(<number>)
+TYPE: Numeric Function                      FORMAT: VAL (<string>)
+TYPE: Screen Integer Function               FORMAT: POS (<dummy>)
+TYPE: Statement                             FORMAT: CLOAD [<file-name>]
+TYPE: Statement                             FORMAT: REM [<remark>]
+TYPE: Statement                             FORMAT: RESTORE [<line-number>]
+TYPE: String Function                       FORMAT: CHR$ (<number>)
+TYPE: String Function                       FORMAT: LEFT$(<string>, <integer>)
+TYPE: String Function                       FORMAT: MID$(<string>,<numeric-1>[,<numeric-2>])
+TYPE: String Function                       FORMAT: RIGHT$ (<string>,<numeric>)
+TYPE: String Function                       FORMAT: SPC (<numeric>)
+TYPE: String Function                       FORMAT: STR$ (<numeric>)
+TYPE: String Function                       FORMAT: TAB (<numeric>)
+TYPE: System Integer Function               FORMAT: PEEK(<location>)
+TYPE: System Statement                      FORMAT: POKE <location>,<value>
+TYPE: Variables Statement                   FORMAT: CLEAR [<numeric> [, <location>]]
+TYPE: Variables Statement                   FORMAT: DATA <list of constants>
+TYPE: Variables Statement                   FORMAT: DIM <variable>( <subscripts> )[
+TYPE: Variables Statement                   FORMAT: [LET] <variable> = <expression>
